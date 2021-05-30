@@ -1,0 +1,9 @@
+error[E0282]: type annotations needed
+ --> $DIR/msg_send_no_return_type.rs:6:20
+  |
+6 |         let _obj = msg_send![cls, new];
+  |             ----   ^^^^^^^^^^^^^^^^^^^ cannot infer type
+  |             |
+  |             consider giving `_obj` a type
+  |
+  = note: this error originates in a macro (in Nightly builds, run with -Z macro-backtrace for more info)
